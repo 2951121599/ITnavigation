@@ -1,0 +1,49 @@
+{#{% load staticfiles %}#}
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>编程导航-ITnavigation</title>
+    <meta name="keywords" content="编程导航-ITnavigation">
+    <meta name="description" content="编程导航-ITnavigation">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1″/>
+    <link rel="shortcut icon" href="{% static "images/favicon.ico" %}">
+    <link rel="stylesheet" href="{% static "css/bootstrap.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/style.css" %}" type="text/css">
+    <script src="{% static "js/jquery-1.11.1.min.js" %}"></script>
+
+    <style>
+        /*这里修改提示框的字体样式*/
+        .bdSug_wpr {
+            color: black;
+        }
+    </style>
+
+    {% block css %}
+
+    {% endblock %}
+
+    {% block js %}
+
+    {% endblock %}
+</head>
+
+{% include 'head.html' %}
+
+<body>
+
+{% block content %}
+
+{% endblock %}
+
+</body>
+
+{% include 'footer.html' %}
+
+{% block downjs %}
+
+{% endblock %}
+
+</html>

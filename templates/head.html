@@ -1,0 +1,86 @@
+{#<div id="nav">#}
+{#    <div class="con">#}
+{#        <div class="log">众包网站</div>#}
+{#        <ul>#}
+{#            <li id="l1"><a href="/" class="focus">网站首页</a></li>#}
+{#            <li id="l2"><a href="{% url 'outsource:projects' %}">项目列表</a></li>#}
+{#            <li id="l3"><a href="{% url 'outsource:developers' %}">开发者</a></li>#}
+{#            <li id="l4"><a href="{% url 'circle:index' %}">技术圈</a></li>#}
+{#            <li id="l5"><a href="{% url 'trade:index' %}">项目分享</a></li>#}
+{#            <li id="l6"><a href="{% url 'outsource:help' %}">帮助</a>#}
+{#                <ul id="sub_nav">#}
+{#                    <li><a href="{% url 'outsource:guide1' %}">需求方指南 </a></li>#}
+{#                    <li><a href="{% url 'outsource:guide2' %}">开发者指南 </a></li>#}
+{#                </ul>#}
+{#            </li>#}
+{#            <li id="l7"><a href="{% url 'outsource:publish' %}">发布项目</a></li>#}
+{#        </ul>#}
+{#        <div class="act">#}
+{#            {% if request.session.islogin %}#}
+{#                <a href="{% url 'user:logout' %}">登出</a>#}
+{#                <a href="{% url 'user:user' %}">{{ request.session.username }} 的个人中心</a>#}
+{#            {% else %}#}
+{#                <a href="{% url 'user:login' %}">登录</a>#}
+{#                <a href="{% url 'user:register' %}">注册</a>#}
+{#            {% endif %}#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
+
+{% load static %}
+<!--导航栏 begin-->
+<header id="topDiv">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="{% url 'navigation:index' %}">
+                    <img src="{% static "images/logo.png" %}" style="margin-top: -15px;width:120px;height:50px;"> </a>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                </button>
+            </div>
+            <div id="navbar-collapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a class="active" href="{% url 'navigation:index' %}"><span>编程语言</span></a></li>
+                    <li><a href="{% url 'navigation:pm' %}" title="产品经理"><span>产品经理</span></a></li>
+                    <li><a href="ui.html" title="UI"><span>UI</span></a></li>
+                    <li><a href="cehua.html" title="策划"><span>策划</span></a></li>
+                    <li><a href="blog.html" title="博客"><span>博客</span></a></li>
+                    <li style="margin-top:-6px;"> &nbsp;
+                        <form action="http://www.baidu.com/baidu" target="_blank">
+                            <input name=tn type=HIDDEN value=baidu>
+                            <a href="http://www.baidu.com/"></a>
+                            <input id="kw" type="text" class="form-group" placeholder="搜你想搜的" name="word" size="30"
+                                   baiduSug="1">
+                            <input type="submit" class="btn-default" value="百度">
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--导航栏 end-->
+
+<!--图片栏 begin-->
+<div class="container">
+    <div class="daohan">
+        <ul>
+            <li><a href="https://www.csdn.net/" title="csdn"><img src="{% static "images/csdn.png" %}"></a></li>
+            <li><a href="https://github.com/" title="代码仓Github" target="_blank"><img
+                    src="{% static "images/github.png" %}"></a>
+            </li>
+            <li><a href="https://www.v2ex.com/" title="V2EX" target="_blank"><img src="{% static "images/v2ex.png" %}"></a>
+            </li>
+            <li><a href="https://nodejs.org/en/" title="nodejs" target="_blank"><img
+                    src="{% static "images/node.png" %}"></a></li>
+            <li><a href="http://www.tiobe.com/tiobe_index?page=index" title="语言流行分布统计" target="_blank"><img
+                    src="{% static "images/yuyin.png" %}"></a></li>
+            <li><a href="https://www.imooc.com/" title="慕课网" target="_blank"><img src="{% static "images/mooc.png" %}"></a>
+            </li>
+            <li><a href="http://cn.vuejs.org/" title="vuejs"><img src="{% static "images/vue.png" %}"></a></li>
+            <li><a href="https://www.oschina.net/" title="开源中国" target="_blank"><img
+                    src="{% static "images/kyzg.png" %}"></a></li>
+        </ul>
+    </div>
+</div>
+<!--图片栏 end-->

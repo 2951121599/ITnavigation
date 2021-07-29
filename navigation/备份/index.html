@@ -1,0 +1,631 @@
+﻿{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    主页
+{% endblock %}
+
+{% block content %}
+<!--内容栏 begin-->
+<div class="container">
+
+    <!--
+    floor_1绿
+    floor_2蓝
+    floor_3红
+    floor_4黄
+    -->
+
+    <div class="site-area floor_1">
+        <!--编程网站列表-->
+        <div class="floor">编程网站</div>
+
+        <ul> <!--次列表-->
+            <li class="title"><a href="#" onclick="return false" target="_blank">在线OJ</a></li>
+            <li><a href="https://dsa.cs.tsinghua.edu.cn/oj/" target="_blank">清华OJ</a></li>
+            <li><a href="http://www.tsinsen.com/" target="_blank">清华青橙</a></li>
+            <li><a href="http://poj.org/" target="_blank">北大OJ</a></li>
+            <li><a href="http://www.dotcpp.com/oj/problemset.html" target="_blank">C语言网</a></li>
+            <li><a href="http://acm.nyist.edu.cn/JudgeOnline/problemset.php" target="_blank">南阳OJ</a></li>
+            <li><a href="http://acmicpc.info/" target="_blank">ACM信息</a></li>
+            <li><a href="https://nanti.jisuanke.com/contest" target="_blank">计蒜客</a></li>
+            <li><a href="https://www.luogu.org/" target="_blank">洛谷</a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">在线OJ</a></li>
+            <li><a href="http://acm.sdut.edu.cn/onlinejudge2/index.php/Home/Index/problemlist"
+                   target="_blank">山东理工OJ</a></li>
+            <li><a href="http://acm.nyist.edu.cn/JudgeOnline/problemset.php" target="_blank">南阳OJ</a></li>
+            <li><a href="http://acmicpc.info/" target="_blank">ACM信息</a></li>
+            <li><a href="https://nanti.jisuanke.com/contest" target="_blank">计蒜客</a></li>
+            <li><a href="https://www.luogu.org/" target="_blank">洛谷</a></li>
+            <li><a href="https://dsa.cs.tsinghua.edu.cn/oj/" target="_blank">清华OJ</a></li>
+            <li><a href="http://poj.org/" target="_blank">北大OJ</a></li>
+            <li><a href="http://www.tsinsen.com/" target="_blank">清华青橙</a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">学习网站</a></li>
+            <li><a href="http://www.phpxs.com/fenxiang/" target="_blank">编程学习网</a></li>
+            <li><a href="https://www.shiyanlou.com/courses/" target="_blank">实验楼</a></li>
+            <li><a href="http://www.runoob.com/" target="_blank">菜鸟教程</a></li>
+            <li><a href="https://www.boxuegu.com/" target="_blank">博学谷</a></li>
+            <li><a href="http://www.51cto.com/" target="_blank">51CTO</a></li>
+            <li><a href="http://fishc.com/" target="_blank">鱼C工作室</a></li>
+            <li><a href="http://www.php230.com/" target="_blank">IT程序员</a></li>
+            <li><a href="https://www.oschina.net/" target="_blank">开源中国</a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">视频网站</a></li>
+            <li><a href="https://mooc.guokr.com/" target="_blank">慕课网</a></li>
+            <li><a href="http://www.maiziedu.com/" target="_blank">麦子学院</a></li>
+            <li><a href="http://study.163.com/category/it" target="_blank">网易云课堂</a></li>
+            <li><a href="http://www.duobei.com/" target="_blank">多贝</a></li>
+            <li><a href="https://cn.udacity.com/" target="_blank">优达学城</a></li>
+            <li><a href="http://bbs.itheima.com/bj" target="_blank">黑马程序员</a></li>
+            <li><a href="https://www.itbegin.com/apps" target="_blank">在线编程</a></li>
+            <li><a href="http://www.1nami.com/" target="_blank">1纳米学习</a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">视频网站</a></li>
+            <li><a href="http://www.mamicode.com/" target="_blank">码迷</a></li>
+            <li><a href="http://www.mengma.com/" target="_blank">萌码</a></li>
+            <li><a href="http://www.xueit.wang/forum-87-1.html" target="_blank">码狼</a></li>
+            <li><a href="http://hao.jobbole.com/" target="_blank">伯乐在线</a></li>
+            <li><a href="http://www.00com.org/" target="_blank">IT视频网</a></li>
+            <li><a href="https://www.nowcoder.com/" target="_blank">牛客网</a></li>
+            <li><a href="http://www.codesky.net/" target="_blank">源码天空</a></li>
+            <li><a href="http://www.codeforge.cn/" target="_blank">程序源代码</a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">学习网址</a></li>
+            <li><a href="http://www.cocoachina.com/bbs/read.php?tid=123546" target="_blank">代码分享站</a></li>
+            <li><a href="http://www.it-home.org/information/" target="_blank">程序员之家</a></li>
+            <li><a href="http://www.bkjia.com/" target="_blank">帮客之家</a></li>
+            <li><a href="http://www.flighty.cn/" target="_blank">轻狂志</a></li>
+            <li><a href="http://www.itbiancheng.com/" target="_blank">吾爱编程</a></li>
+            <li><a href="http://www.17ky.net/" target="_blank">一起开源</a></li>
+            <li><a href="http://www.yiibai.com/" target="_blank">易百教程</a></li>
+            <li><a href="http://www.downcodes.com/" target="_blank">源码网</a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">编程导航</a></li>
+            <li><a href="http://www.budanxin.com/" target="_blank">网址导航</a></li>
+            <li><a href="http://www.57616.com/fenlei/chengxu.html" target="_blank">我去遛一遛</a></li>
+            <li><a href="https://www.cg4d.com/" target="_blank">程序员日常</a></li>
+            <li><a href="http://www.c3z.cn/" target="_blank">极客导航</a></li>
+            <li><a href="http://www.cnblogs.com/superdo/p/4433389.html" target="_blank">网址导航</a></li>
+            <li><a href="http://www.bcxue.com/url/" target="_blank">编程学堂</a></li>
+            <li><a href="http://ilxdh.com/" target="_blank">龙轩导航</a></li>
+            <li><a href="http://youquhome.com/" target="_blank">有趣网址</a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">编程学习</a></li>
+            <li><a href="http://www.open-open.com/lib/" target="_blank">深度开源</a></li>
+            <li><a href="http://laravelacademy.org/" target="_blank">laravel学院</a></li>
+            <li><a href="https://segmentfault.com/" target="_blank">seg论坛</a></li>
+            <li><a href="https://www.v2ex.com/" target="_blank">V2EX</a></li>
+            <li><a href="http://www.600it.com/" target="_blank">网址导航</a></li>
+            <li><a href="http://www.egouz.com/" target="_blank">国外网站</a></li>
+            <li><a href="https://greasyfork.org/zh-CN/scripts" target="_blank">用户脚本</a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">编程工具</a></li>
+            <li><a href="http://lackar.com/aa/" target="_blank">在线工具</a></li>
+            <li><a href="http://tampermonkey.net/" target="_blank">油猴脚本</a></li>
+            <li><a href="https://tool.lu/" target="_blank">在线工具</a></li>
+            <li><a href="http://www.atool.org/" target="_blank">aTool</a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ul>
+    </div>
+
+
+    <div class="site-area floor_2">
+        <!--前端列表-->
+        <div class="floor">前端</div>
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">设计网站</a></li>
+            <li><a href="http://www.sj33.cn/" target="_blank">设计之家</a></li>
+            <li><a href="https://www.chuangkit.com/" target="_blank">在线设计</a></li>
+            <li><a href="http://www.qdfuns.com/" target="_blank">前端网</a></li>
+            <li><a href="http://www.shouce.ren/" target="_blank">手册网</a></li>
+            <li><a href="http://www.sucaihuo.com/" target="_blank">素材火</a></li>
+            <li><a href="http://www.ih5.cn/not-logged-in" target="_blank">iH5</a></li>
+            <li><a href="http://www.jb51.net/" target="_blank">脚本之家</a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">css</a></li>
+            <li><a href="http://www.divcss5.com/" target="_blank">css之家</a></li>
+            <li><a href="http://www.w3school.com.cn/css/" target="_blank">css教程</a></li>
+            <li><a href="http://www.runoob.com/css/css-tutorial.html" target="_blank">菜鸟css</a></li>
+            <li><a href="http://www.w3school.com.cn/css3/css3_animation.asp" target="_blank">css3 动画</a></li>
+            <li><a href="http://css.doyoe.com/" target="_blank">css参考手册</a></li>
+            <li><a href="http://www.daqianduan.com/tag/css" target="_blank">大前端</a></li>
+            <li><a href="http://www.bootcss.com/p/lesscss/" target="_blank">less</a></li>
+            <li><a href="http://sass.bootcss.com/docs/sass-reference/" target="_blank">sass</a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">框架</a></li>
+            <li><a href="http://cn.vuejs.org/" target="_blank">Vuejs</a></li>
+            <li><a href="https://github.com/angular/angular" target="_blank">AngularJs</a></li>
+            <li><a href="http://jquery.com/" target="_blank">jquery</a></li>
+            <li><a href="http://www.requirejs.cn/" target="_blank">RequireJs</a></li>
+            <li><a href="http://www.zeptojs.cn/" target="_blank">zeptojs</a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">教程</a></li>
+            <li><a href="http://www.w3school.com.cn/" target="_blank">w3school</a></li>
+            <li><a href="http://www.jikexueyuan.com/" target="_blank">极客学院</a></li>
+            <li><a href="http://www.imooc.com/" target="_blank">慕课网</a></li>
+            <li><a href="http://www.icoolxue.com/" target="_blank">爱酷</a></li>
+            <li><a href="http://www.chuanke.com/" target="_blank">百度传课</a></li>
+            <li><a href="http://ke.qq.com/" target="_blank">腾讯学堂</a></li>
+            <li><a href="http://web.jobbole.com/" target="_blank">伯乐在线</a></li>
+            <li><a href="http://edu.51cto.com/" target="_blank">51cto</a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">UI</a></li>
+            <li><a href="http://frozenui.github.io/" target="_blank">frozenui</a></li>
+            <li><a href="http://weui.github.io/weui/" target="_blank">weui</a></li>
+            <li><a href="http://amazeui.org/" target="_blank">amazeui</a></li>
+            <li><a href="http://ionicframework.com/" target="_blank">ionic</a></li>
+            <li><a href="http://metroui.org.ua/" target="_blank">Metro UI</a></li>
+            <li><a href="http://framework7.taobao.org/" target="_blank">framework7</a></li>
+            <li><a href="http://m.sui.taobao.org/" target="_blank">SUI Mobile</a></li>
+            <li><a href="http://dev.dcloud.net.cn/mui/" target="_blank">MUI</a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">营销</a></li>
+            <li><a href="http://www.larkapp.com/pc.html" target="_blank">青雀</a></li>
+            <li><a href="http://www.epub360.com/" target="_blank">意派</a></li>
+            <li><a href="http://www.maka.im/" target="_blank">MAKA</a></li>
+            <li><a href="http://eqxiu.com/" target="_blank">企业秀</a></li>
+            <li><a href="http://qyx.totop.net/" target="_blank">易企秀</a></li>
+            <li><a href="http://www.rabbitpre.com/" target="_blank">兔展</a></li>
+            <li><a href="http://www.cloud7.com.cn/chuye" target="_blank">初页</a></li>
+            <li><a href="http://xiumi.us/#/" target="_blank">秀米</a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">JS套装</a></li>
+            <li><a href="https://www.javascriptcn.com/" target="_blank">js中文网</a></li>
+            <li><a href="http://www.jb51.net/article/127344.htm" target="_blank">登录注册</a></li>
+            <li><a href="http://dataveyes.com/#!/en" target="_blank">特效</a></li>
+            <li><a href="http://www.loome.net/" target="_blank">洛米</a></li>
+            <li><a href="http://babeljs.io/" target="_blank">babeljs</a></li>
+            <li><a href="http://es6.ruanyifeng.com/" target="_blank">es6语法</a></li>
+            <li><a href="https://www.npmjs.com/" target="_blank">npm</a></li>
+            <li><a href="http://cookingjs.github.io/zh-cn/index.html" target="_blank">cooking</a></li>
+        </ul>
+    </div>
+
+    <div class="site-area floor_3">
+        <!--实用工具列表-->
+        <div class="floor">实用工具</div>
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">网盘搜索</a></li>
+            <li><a href="https://www.panc.cc/" target="_blank">胖次搜索</a></li>
+            <li><a href="http://pansou.com/" target="_blank">盘搜</a></li>
+            <li><a href="http://www.xibianyun.com/" target="_blank">西边云</a></li>
+            <li><a href="http://www.daysou.com/" target="_blank">天天搜</a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">工具</a></li>
+            <li><a href="http://lackar.com/aa/" target="_blank">Anywhere</a></li>
+            <li><a href="http://www.iplaysoft.com/" target="_blank">异次元软件</a></li>
+            <li><a href="http://note.youdao.com/" target="_blank">有道云笔记</a></li>
+            <li><a href="http://tool.chinaz.com/" target="_blank">站长工具</a></li>
+            <li><a href="http://www.peise.net/tools/web/" target="_blank">配色工具</a></li>
+            <li><a href="https://maxiang.io/" target="_blank">马克飞象</a></li>
+            <li><a href="http://www.ihacksoft.com/" target="_blank">开心软件园</a></li>
+            <li><a href="http://rj.baidu.com/soft/detail/17292.html" target="_blank">Freemind</a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">工具</a></li>
+            <li><a href="http://tool.mkblog.cn/" target="_blank">工具箱1</a></li>
+            <li><a href="http://tool.mkblog.cn/new.php" target="_blank">工具箱2</a></li>
+            <li><a href="http://www.dayanzai.me/" target="_blank">大眼仔旭</a></li>
+            <li><a href="https://www.appcgn.com/" target="_blank">软件缘</a></li>
+            <li><a href="https://www.portablesoft.org/" target="_blank">绿色软件</a></li>
+            <li><a href="http://www.zdfans.com/" target="_blank">软件分享</a></li>
+            <li><a href="https://amazing-apps.gitbooks.io/windows-apps-that-amaze-us/content/zh-CN/" target="_blank">绝赞应用</a>
+            </li>
+            <li><a href="https://uzer.me/u/signin" target="_blank">UzerMe</a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">云平台</a></li>
+            <li><a href="http://www.qcloud.com/" target="_blank">腾讯云</a></li>
+            <li><a href="https://www.aliyun.com/" target="_blank">阿里云</a></li>
+            <li><a href="http://www.sinacloud.com/" target="_blank">新浪云</a></li>
+            <li><a href="https://cloud.baidu.com/" target="_blank">百度云</a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">微信开发</a></li>
+            <li><a href="https://mp.weixin.qq.com/" target="_blank">公众平台</a></li>
+            <li><a href="https://pay.weixin.qq.com/index.php/home/login?return_url=%2Findex.php%2Faccount"
+                   target="_blank">商户平台</a></li>
+            <li><a href="https://zb.weixin.qq.com/" target="_blank">摇一摇周边</a></li>
+            <li><a href="http://mp.weixin.qq.com/wiki/home/index.html" target="_blank">开发文档</a></li>
+            <li><a href="https://pay.weixin.qq.com/wiki/doc/api/index.html" target="_blank">支付文档</a></li>
+            <li><a href="http://mp.weixin.qq.com/wiki/10/e5f772f4521da17fa0d7304f68b97d7e.html" target="_blank">调试工具</a>
+            </li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">开放平台</a></li>
+            <li><a href="http://open.qq.com/" target="_blank">QQ开放平台</a></li>
+            <li><a href="http://open.weibo.com/" target="_blank">微博平台</a></li>
+            <li><a href="http://dev.pp.cn/" target="_blank">pp助手</a></li>
+            <li><a href="http://wiki.open.qq.com/wiki/API%E6%96%87%E6%A1%A3" target="_blank">腾讯API文档</a></li>
+            <li><a href="https://connect.qq.com/" target="—_blank">QQ互联</a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">编辑器</a></li>
+            <li><a href="https://notepad-plus-plus.org/" target="_blank" title="实用的文本编辑器">notepad</a></li>
+            <li><a href="http://www.sublimetext.com/3" target="_blank" title="跨平台的编辑器">sublimetext</a></li>
+            <li><a href="http://brackets.io/" target="_blank" title="adobe开源的编辑器">brackets</a></li>
+            <li><a href="https://atom.io/" target="_blank" title="社区开源的编辑器">atom</a></li>
+            <li><a href="https://code.visualstudio.com/" target="_blank" title="微软编辑器">vscode</a></li>
+            <li><a href="http://www.ultraedit.com/" target="_blank" title="厉害编辑器">ultraedit</a></li>
+            <li><a href="https://www.editplus.com/" target="_blank" title="editplus">editplus</a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">代码托管</a></li>
+            <li><a href="https://gitee.com/" target="_blank">码云</a></li>
+            <li><a href="https://github.com/" target="_blank">Github</a></li>
+            <li><a href="https://www.gitbook.com/explore" target="_blank">Gitbook</a></li>
+            <li><a href="http://mp.weixin.qq.com/s/C4djFjoQXN1_fQ5l4NUKNw" target="_blank">开源项目</a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">域名</a></li>
+            <li><a href="https://domains.qcloud.com/" target="_blank">腾讯云</a></li>
+            <li><a href="http://wanwang.aliyun.com/" target="_blank">万网</a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ul>
+    </div>
+
+
+    <div class="site-area floor_4">
+        <div class="floor">C/C++</div>
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">名博</a></li>
+            <li><a href="http://blog.codingnow.com/" target="_blank">云风</a></li>
+            <li><a href="http://mindhacks.cn/" target="_blank">刘未鹏</a></li>
+            <li><a href="http://coolshell.cn/featured_posts" target="_blank">陈皓</a></li>
+            <li><a href="http://blog.csdn.net/solstice/" target="_blank">陈硕</a></li>
+            <li><a href="http://blog.csdn.net/baimafujinji/article/category/1608089" target="_blank">算法之美</a></li>
+            <li><a href="http://zh.cppreference.com/w/%E9%A6%96%E9%A1%B5" target="_blank">参考手册</a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ul>
+
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">教程</a></li>
+            <li><a href="http://www.21edu8.com/university/jisuanji/29098/" target="_blank">星火视频</a></li>
+            <li><a href="http://edu.51cto.com/course/courseList/id-12.html" target="_blank">51cto视频</a></li>
+            <li><a href="http://www.jikexueyuan.com/course/cpp/" target="_blank">极客视频</a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">开发</a></li>
+            <li><a href="http://www.qt.io/download/" target="_blank">qt</a></li>
+            <li><a href="http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/galileosr2"
+                   target="_blank">eclipse</a></li>
+            <li><a href="https://www.visualstudio.com/zh-cn/downloads/download-visual-studio-vs.aspx" target="_blank">visualstudio</a>
+            </li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ul>
+    </div>
+
+
+    <div class="site-area floor_1">
+
+        <div class="floor">Java</div>
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">社区</a></li>
+            <li><a href="http://www.iteye.com/" target="_blank">iteye</a></li>
+            <li><a href="http://www.csdn.net/" target="_blank">CSDN</a></li>
+            <li><a href="http://www.oschina.net/question/tag/java/" target="_blank">oschina</a></li>
+            <li><a href="http://developer.51cto.com/java/" target="_blank">51cto</a></li>
+            <li><a href="http://www.importnew.com/" target="_blank">importnew</a></li>
+            <li><a href="https://www.ibm.com/developerworks/cn/java/" target="_blank" title="ibm java开发">ibm-java</a>
+            </li>
+            <li><a href="http://www.infoq.com/cn/java/news/" target="_blank" title="infoq java系列">infoq</a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">IDE</a></li>
+            <li><a href="http://www.eclipse.org/downloads/" target="_blank">Eclipse</a></li>
+            <li><a href="https://www.jetbrains.com/idea/" target="_blank">IntelliJ </a></li>
+            <li><a href="https://netbeans.org/" target="_blank">NetBean </a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">教程</a></li>
+            <li><a href="https://www.shiyanlou.com/courses/18" target="_blank">实验楼</a></li>
+            <li><a href="http://edu.51cto.com/course/course_id-513.html" target="_blank">javaSE</a></li>
+            <li><a href="http://edu.51cto.com/course/course_id-960.html" target="_blank">Struts2 </a></li>
+            <li><a href="http://edu.51cto.com/course/course_id-431.html" target="_blank">Hibernate </a></li>
+            <li><a href="http://blog.csdn.net/zhangerqing" target="_blank">java之美 </a></li>
+            <li><a href="http://wenku.baidu.com/view/c29ee7503b3567ec102d8ae5.html?from=search"
+                   target="_blank">设计模式 </a></li>
+            <li><a href="http://blog.csdn.net/column/details/concurrency.html" target="_blank">并发编程 </a></li>
+            <li><a href="http://jingyan.baidu.com/article/f96699bb8b38e0894e3c1bef.html" target="_blank">jdk配置 </a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">文档</a></li>
+            <li><a href="http://tool.oschina.net/apidocs/apidoc?api=jdk-zh" target="_blank">java文档</a></li>
+            <li><a href="http://www.yq1012.com/ThinkingInJava/" target="_blank" title="经典之作">thinkinjava</a></li>
+            <li><a href="http://www.cnblogs.com/zhangzhu/archive/2013/07/04/3172486.html" target="_blank"
+                   title="mysql命令">mysql命令</a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">工具</a></li>
+            <li><a href="https://tomcat.apache.org/" target="_blank">tomcat</a></li>
+            <li><a href="http://hadoop.apache.org/docs/r1.0.4/cn/quickstart.html" target="_blank">Hadoop</a></li>
+            <li><a href="http://nginx.org/" target="_blank" title="反向代理服务器">nginx</a></li>
+            <li><a href="http://www.oracle.com/cn/downloads/index.html" target="_blank" title="Oracle 甲骨文">Oracle </a>
+            </li>
+            <li><a href="http://thrift.apache.org/" target="_blank" title="协议 框架">thrift </a></li>
+            <li><a href="http://www.ruanyifeng.com/blog/2014/05/restful_api.html" target="_blank" title="协">RESTful</a>
+            </li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">名博</a></li>
+            <li><a href="http://www.raychase.net/aboutme" target="_blank">四火的唠叨</a></li>
+            <li><a href="http://blog.2baxb.me/" target="_blank">微博架构</a></li>
+            <li><a href="http://blog.csdn.net/zjf280441589/article/details/45639523" target="_blank">翡青的博客</a></li>
+            <li><a href="http://www.soulteary.com/" target="_blank">苏洋阿里</a></li>
+            <li><a href="http://www.cnblogs.com/haibindev/archive/2012/04/16/2450989.html" target="_blank">流技术</a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">面试</a></li>
+            <li><a href="http://www.importnew.com/10980.html" target="_blank">面试题</a></li>
+            <li><a href="http://www.cnblogs.com/lanxuezaipiao/p/3371224.html" target="_blank">笔试题</a></li>
+            <li><a href="http://www.nowcoder.com/questionCenter?mutiTagIds=639" target="_blank">牛客网</a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ul>
+    </div>
+
+
+    <div class="site-area floor_2">
+        <div class="floor">Android</div>
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">资源</a></li>
+            <li><a href="http://www.android-studio.org/" target="_blank">android中文</a></li>
+            <li><a href="http://www.oschina.net/android/" target="_blank">oschina</a></li>
+            <li><a href="http://luo.apkbus.com/" target="_blank">老罗教程</a></li>
+            <li><a href="http://www.apkbus.com/" target="_blank">安卓巴士</a></li>
+            <li><a href="http://www.androiddevtools.cn/" target="_blank">开发工具</a></li>
+            <li><a href="http://www.importnew.com/" target="_blank">专注Android</a></li>
+            <li><a href="http://netsecurity.51cto.com/art/201411/456832.htm" target="_blank">渗透软件</a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">分发</a></li>
+            <li><a href="http://fir.im/" target="_blank" title="应用分发">fir</a></li>
+            <li><a href="http://pre.im/" target="_blank" title="应用分发">pre</a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ul>
+    </div>
+
+    <div class="site-area floor_3">
+        <div class="floor">Python</div>
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">资源</a></li>
+            <li><a href="http://www.pythontab.com/" title="python资料" target="_blank">python 社区</a></li>
+            <li><a href="http://bbs.pythontab.com/forum.php" title="python论坛" target="_blank">python论坛</a></li>
+            <li><a href="https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000"
+                   target="_blank">廖雪峰</a></li>
+            <li><a href="http://www.runoob.com/python/python-tutorial.html" target="_blank">菜鸟教程</a></li>
+            <li><a href="http://python.jobbole.com/" target="_blank">伯乐在线</a></li>
+            <li><a href="http://www.pythondoc.com/" target="_blank">学习大本营</a></li>
+            <li><a href="http://www.iplaypy.com/" target="_blank">玩蛇网</a></li>
+            <li><a href="https://www.zhihu.com/question/20899988" target="_blank">爬虫</a></li>
+
+        </ul>
+    </div>
+
+
+    <div class="site-area floor_4">
+        <div class="floor">Php</div>
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">入门</a></li>
+            <li><a href="http://www.w3school.com.cn/php/" target="_blank">语法参考</a></li>
+            <li><a href="http://www.php100.com/" target="_blank">PHP100</a></li>
+            <li><a href="http://www.learnphp.cn/index.html" target="_blank">PHP基础</a></li>
+            <li><a href="http://www.runoob.com/php/php-tutorial.html" target="_blank">菜鸟教程</a></li>
+            <li><a href="http://school.php1.cn/" target="_blank">php1</a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">框架</a></li>
+            <li><a href="http://www.thinkphp.cn/" target="_blank">ThinkPHP</a></li>
+            <li><a href="http://www.golaravel.com/" target="_blank">Laravel</a></li>
+            <li><a href="http://www.yiiframework.com/" target="_blank">yii</a></li>
+            <li><a href="https://www.phalconphp.com/zh/" target="_blank">phalcon </a></li>
+            <li><a href="http://www.onethink.cn/" target="_blank">oneThink</a></li>
+            <li><a href="https://cn.wordpress.org/" target="_blank">wordpress</a></li>
+            <li><a href="http://typecho.org/" target="_blank">typecho</a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">环境</a></li>
+            <li><a href="http://www.apache.org/dyn/closer.cgi" target="_blank">apache</a></li>
+            <li><a href="https://www.apachefriends.org/zh_cn/index.html" target="_blank">xampp</a></li>
+            <li><a href="http://www.wampserver.com/en/" target="_blank">wampserver</a></li>
+            <li><a href="http://www.mysql.com/downloads/" target="_blank">mysql</a></li>
+            <li><a href="https://www.jetbrains.com/phpstorm/" target="_blank" title="收费php开发IDE">phpstorm</a></li>
+            <li><a href="https://www.jetbrains.com/webstorm/" target="_blank">webstorm</a></li>
+            <li><a href="http://www.zend.com/en/products/studio" target="_blank" title="php开发IDE">zendstudio</a></li>
+            <li><a href="http://www.eclipse.org/downloads/packages/eclipse-php-developers/heliosr" target="_blank">Eclipse</a>
+            </li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">工具</a></li>
+            <li><a href="https://www.navicat.com/products/navicat-for-mysql" target="_blank">Navicat</a></li>
+            <li><a href="http://doc.mysql.cn/" target="_blank">mysql手册</a></li>
+            <li><a href="https://coding.net/" target="_blank" title="git代码托管">coding</a></li>
+            <li><a href="http://code.taobao.org/" target="_blank">淘宝svn</a></li>
+            <li><a href="http://www.qiniu.com/" target="_blank">7牛云存储</a></li>
+            <li><a href="http://www.mysql.com/downloads/" target="_blank">mysql下载</a></li>
+            <li><a href="http://www.phpmyadmin.net/" target="_blank" title="数据库管理">phpmyadmin</a></li>
+            <li><a href="" target="_blank"></a></li>
+        </ul>
+    </div>
+    <div class="site-area floor_1">
+
+
+        <div class="floor">安全</div>
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">漏洞</a></li>
+            <li><a href="http://www.freebuf.com/" target="_blank">freebuf</a></li>
+            <li><a href="http://www.myhack58.com/" target="_blank">黑吧安全网</a></li>
+            <li><a href="https://www.aqdog.com/" target="_blank">安犬</a></li>
+            <li><a href="https://www.vulbox.com/" target="_blank">漏洞盒子</a></li>
+            <li><a href="http://wooyun.tangscan.cn/index.html" target="_blank">乌云网</a></li>
+            <li><a href="http://loudong.360.cn/" target="_blank">补天</a></li>
+            <li><a href="http://www.hack-cn.com/" target="_blank">被黑站点统计</a></li>
+            <li><a href="https://www.hac-ker.net/" target="_blank">被黑网站统计</a></li>
+        </ul>
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">漏洞</a></li>
+            <li><a href="https://forum.eviloctal.com/" target="_blank">邪恶八进制</a></li>
+            <li><a href="http://www.evil0x.com/" target="_blank">十六进制</a></li>
+            <li><a href="https://www.bugbank.cn/" target="_blank">漏洞银行</a></li>
+            <li><a href="http://www.heikexiehui.com/" target="_blank">黑客协会</a></li>
+            <li><a href="http://www.secist.com/" target="_blank">即刻安全</a></li>
+            <li><a href="http://www.secbox.cn/" target="_blank">安全盒子</a></li>
+            <li><a href="http://www.webscan.cc/" target="_blank">同iP查询</a></li>
+            <li><a href="https://www.nosafe.org/forum.php" target="_blank">NoSafe</a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">漏洞</a></li>
+            <li><a href="https://ichunqiu.com/" target="_blank">i春秋</a></li>
+            <li><a href="https://www.haohacker.com/" target="_blank">浩神博客</a></li>
+            <li><a href="http://yyjcw.com/" target="_blank">夜鹰教程网</a></li>
+            <li><a href="https://www.t00ls.net/" target="_blank">Tools</a></li>
+            <li><a href="http://www.xf1433.com/" target="_blank">小风教程网</a></li>
+            <li><a href="https://www.exehack.net/" target="_blank">小残博客</a></li>
+            <li><a href="http://www.test404.com/" target="_blank">test404</a></li>
+            <li><a href="http://www.cnhonkerarmy.com/portal.php" target="_blank">红盟社区</a></li>
+        </ul>
+
+        <ul>
+            <li class="title"><a href="#" onclick="return false" target="_blank">漏洞</a></li>
+            <li><a href="https://www.haohacker.com/" target="_blank">浩神博客</a></li>
+            <li><a href="http://www.cnmhome.com/" target="_blank">草泥马之家</a></li>
+            <li><a href="http://www.ld80.cn/" target="_blank">灵盾网</a></li>
+            <li><a href="http://www.hackjie.com/" target="_blank">黑客街</a></li>
+            <li><a href="http://www.98exe.net/Article/Index.html" target="_blank">南域剑盟</a></li>
+            <li><a href="http://hack-gov.lofter.com/post/3a0f6e_155407c" target="_blank">黑客学习网站</a></li>
+            <li><a href="http://wooyun.tangscan.cn/static/drops/1.html" target="_blank">分类导航</a></li>
+            <li><a href="http://www.ip138.com/" target="_blank">IP查询网</a></li>
+        </ul>
+
+
+    </div>
+</div>
+<!--内容栏 end-->
+{% endblock %}
+
+
+
+
+            
