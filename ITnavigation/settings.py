@@ -29,8 +29,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    # 'dal',
+    # 'dal_select2',
     'simpleui',
     'import_export',
+    # 'related_admin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # 'rest_framework',  # 升级时再改
     'navigation',
+
 ]
 
 MIDDLEWARE = [

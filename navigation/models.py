@@ -7,7 +7,7 @@ class PartChoice(models.Model):
 
     class Meta:
         db_table = 'part'
-        verbose_name = "网站分区"
+        verbose_name = "0_网站分区"
         verbose_name_plural = verbose_name
 
     def __str__(self):
@@ -21,16 +21,16 @@ class GroupChoice(models.Model):
 
     class Meta:
         db_table = 'group'
-        verbose_name = "网站分组"
+        verbose_name = "1_网站分组"
         verbose_name_plural = verbose_name
 
     def __str__(self):
-        return str("%s" % self.group)
+        return str("%s-%s" % (self.group_part.part, self.group))
 
 
 # 网站信息表
 class Site(models.Model):
-    site_group = models.ForeignKey(GroupChoice, on_delete=models.CASCADE)
+    site_group = models.ForeignKey('GroupChoice', on_delete=models.CASCADE)  # 如果你要关联的模型位于当前模型之后，则需要通过字符串的方式进行引用
     url = models.URLField(verbose_name='网站链接')
     title = models.CharField(max_length=50, verbose_name="网站标题")
     info = models.CharField(max_length=200, blank=True, null=True, verbose_name="网站介绍")
@@ -38,10 +38,12 @@ class Site(models.Model):
 
     class Meta:
         db_table = 'site'
-        verbose_name = '网站信息'
+        verbose_name = '2_网站信息'
         verbose_name_plural = verbose_name
 
     def __str__(self):
-        return self.title
+        # return self.url
+        return '%s-%s-%s' % (self.site_group.group_part.part, self.site_group.group, self.title)
+
 # null 是从数据库层面，允许为空，如果null==True的话，Django 在数据库中会将空值(empty)存储为 NULL，用SQL来说明就是为该列添加了NOT NULL的约束。默认是False。
 # blank 是用于验证。如果一个字段的 blank=True ，Django 在进行表单数据验证时，会允许该字段是空值。如果字段的 blank=False ，该字段就是必填的。

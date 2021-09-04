@@ -1,6 +1,8 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+/__pycache__/
 .idea
 *.pyc
+db.sqlite3
 
