@@ -33,7 +33,7 @@ INSTALLED_APPS = [
     # 'dal_select2',
     'simpleui',
     'import_export',
-    # 'related_admin',
+    'related_admin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

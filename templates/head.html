@@ -40,11 +40,16 @@
             </div>
             <div id="navbar-collapse" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a class="active" href="{% url 'navigation:index' %}"><span>编程语言</span></a></li>
-                    <li><a href="{% url 'navigation:pm' %}" title="产品经理"><span>产品经理</span></a></li>
-                    <li><a href="ui.html" title="UI"><span>UI</span></a></li>
-                    <li><a href="cehua.html" title="策划"><span>策划</span></a></li>
-                    <li><a href="blog.html" title="博客"><span>博客</span></a></li>
+                    <li {% if request.path == '/index' %} class="active" {% endif %} >
+                        <a href="{% url 'navigation:index' %}"><span>编程语言</span></a></li>
+                    <li {% if request.path == '/pm' %} class="active" {% endif %} >
+                        <a href="{% url 'navigation:pm' %}" title="产品经理"><span>产品经理</span></a></li>
+                    <li {% if request.path == '/ui' %} class="active" {% endif %} >
+                        <a href="{% url 'navigation:ui' %}" title="UI"><span>UI</span></a></li>
+                    <li {% if request.path == '/cehua' %} class="active" {% endif %} >
+                        <a href="{% url 'navigation:cehua' %}" title="策划"><span>策划</span></a></li>
+                    <li {% if request.path == '/blog' %} class="active" {% endif %} >
+                        <a href="{% url 'navigation:blog' %}" title="博客"><span>博客</span></a></li>
                     <li style="margin-top:-6px;"> &nbsp;
                         <form action="http://www.baidu.com/baidu" target="_blank">
                             <input name=tn type=HIDDEN value=baidu>
@@ -54,6 +59,8 @@
                             <input type="submit" class="btn-default" value="百度">
                         </form>
                     </li>
+
+                    <li class="active"><a href="http://127.0.0.1:8000/admin" title="后台管理"><span>后台管理</span></a></li>
                 </ul>
             </div>
         </div>

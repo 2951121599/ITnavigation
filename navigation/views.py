@@ -7,10 +7,20 @@ def index(request):
     all_part = PartChoice.objects.all()
     all_group = GroupChoice.objects.all()
     all_site = Site.objects.all()
-    print("all_part------\n", all_part)
-    
     return render(request, 'navigation/index.html', locals())
 
 
 def pm(request):
-    return render(request, 'navigation/product.html', locals())
+    return render(request, 'navigation/pm.html', locals())
+
+
+def ui(request):
+    return render(request, 'navigation/ui.html', locals())
+
+
+def cehua(request):
+    return render(request, 'navigation/cehua.html', locals())
+
+
+def blog(request):
+    return render(request, 'navigation/blog.html', locals())
